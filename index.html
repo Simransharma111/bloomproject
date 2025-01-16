@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bloom Scroll</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <!-- Background Video -->
+  <video class="background-video" autoplay muted loop>
+    <source src="175057-852541348_small.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <header class="navbar">
+    <nav>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul id="menu">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <!-- Animated Shapes -->
+  <div class="shapes">
+    <div class="circle"></div>
+    <div class="flower"></div>
+    <div class="petal"></div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero" id="hero">
+    <h1 class="title">Welcome to Bloom Scroll</h1>
+    <p>Scroll down to explore.</p>
+  </div>
+
+  <!-- Sections -->
+  <section class="about-us" id="about">
+    <h2>About Us</h2>
+    <p>At Bloom Scroll, we create experiences that feel magical and serene. Dive into a world of animations and elegance.</p>
+  </section>
+
+  <!-- Cards Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="cards-container">
+      <div class="card">
+        <img src="./fruit-1218166_1280.png" alt="Service 1" />
+        <p>Service 1</p>
+      </div>
+      <div class="card">
+        <img src="./fruit-1222488_1280.png" alt="Service 2" />
+        <p>Service 2</p>
+      </div>
+      <div class="card">
+        <img src="./png-1342113_1280.png" alt="Service 3" />
+        <p>Service 3</p>
+      </div>
+      <!-- <div class="card">
+        <img src="./autumn-1008520_1280.png" alt="Service 4" />
+        <p>Service 4</p>
+      </div> -->
+    </div>
+  </section>
+  
+  
+
+  <!-- Contact Us Section -->
+  <section class="contact-us" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Made with 🌸</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
